@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+<body>
+
+<div id="demo">
+  <h2>Welcome to the <span id="username"></span></h2>
+  
+</div>
+<script>
+
+    var user = sessionStorage.getItem('userDetails');
+    var userDetails = JSON.parse(user);
+    document.getElementById('username').innerHTML = userDetails[0].username;
+</script>
+</body>
+</html>
